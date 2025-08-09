@@ -121,19 +121,17 @@ section {
   transition: 0.7s ease;
 }
 
+
 /* ================================================= */
-.adv {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('../images/back01.png') no-repeat center center;
-    background-color: #111;
-    padding: 140px;
-}
+
+
 .title {
   display: flex;
   justify-content: center;
   color: #FFB22C;
   font-size: 40px;
   font-weight: 800;
+  margin-top: 30px;
   margin: 5px;
   padding: 10px;
   background-color: #0d0d0f;
@@ -142,6 +140,14 @@ section {
   border-radius: 25px;
   border: 2px solid #FFB22C;
 }
+/* ================================================= */
+.adv {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../images/back01.png') no-repeat center center;
+    background-color: #111;
+    padding: 140px;
+}
+
 
 .content {
   display: flex;
