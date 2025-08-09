@@ -229,7 +229,14 @@ section {
         font-size: 1.7rem;
     }
 }
-
+@media (max-width: 768px) {
+  .main::before {
+    background-attachment: scroll; /* في الموبايل تتحرك مع المحتوى */
+  }
+  .adv {
+    background-attachment: scroll;
+  }
+}
 
 
 
