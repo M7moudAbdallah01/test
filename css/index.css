@@ -134,7 +134,13 @@ section {
   color: #FFB22C;
   font-size: 40px;
   font-weight: 800;
-  margin-bottom: 5px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #0d0d0f;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 25px;
+  border: 2px solid #FFB22C;
 }
 
 .content {
