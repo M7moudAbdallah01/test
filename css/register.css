@@ -1,0 +1,31 @@
+main {
+    padding-top: 100px;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    background: #343434;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form button {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #FFB22C;
+    color: #1A1C20;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #F0A500;
+}
