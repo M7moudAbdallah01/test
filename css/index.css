@@ -3,7 +3,7 @@ section {
   background-color: #111;
   margin: 100px 0px;
 }
-
+ 
 .main {
   position: relative;
   width: 100%;
@@ -120,7 +120,33 @@ section {
   padding-right: 30px;
   transition: 0.7s ease;
 }
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
 
+    form h2 {
+        font-size: 1.3rem;
+    }
+
+    form input, 
+    form button {
+        font-size: 1rem; /* أكبر من 0.9 */
+        padding: 12px; /* مساحة أكبر للكتابة */
+    }
+}
+
+/* للشاشات الكبيرة */
+@media (min-width: 768px) {
+    form {
+        padding: 35px;
+    }
+
+    form h2 {
+        font-size: 1.7rem;
+    }
+}
 
 
 

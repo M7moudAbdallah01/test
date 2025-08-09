@@ -1,7 +1,5 @@
-/* استدعاء الخطوط */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Tajawal:wght@400;700&display=swap');
 
-/* الخلفية */
 body {
     margin: 0;
     padding: 0;
@@ -11,8 +9,7 @@ body {
     background-size: cover;
     color: #fff;
 }
-
-/* مكان النموذج */
+ 
 main {
     display: flex;
     justify-content: center;
@@ -21,7 +18,6 @@ main {
     padding-top: 40px;
 }
 
-/* صندوق التسجيل */
 form {
     background: rgba(0, 0, 0, 0.85);
     padding: 30px;
@@ -31,14 +27,12 @@ form {
     text-align: right;
 }
 
-/* عنوان النموذج */
 form h2 {
     margin-bottom: 20px;
     color: #ffb22c;
     text-align: center;
 }
 
-/* التسميات */
 form label {
     display: block;
     margin-top: 10px;
@@ -46,7 +40,6 @@ form label {
     font-weight: bold;
 }
 
-/* الحقول */
 form input, 
 form button {
     width: 100%;
@@ -60,7 +53,6 @@ form input {
     color: #000;
 }
 
-/* زر التسجيل */
 form button {
     margin-top: 15px;
     background-color: #FFB22C;
@@ -74,7 +66,6 @@ form button:hover {
     background-color: #F0A500;
 }
 
-/* للموبايل */
 @media (max-width: 480px) {
     form {
         width: 90%;
