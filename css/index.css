@@ -120,6 +120,88 @@ section {
   padding-right: 30px;
   transition: 0.7s ease;
 }
+
+/* ================================================= */
+.adv {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../images/back01.png') no-repeat center center;
+    background-color: #111;
+    padding: 100px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: #FFB22C;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 340px;
+  min-width: 220px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+  border-radius: 10px;
+  box-shadow: 0px 5px rgba(1 1 1 / 15%);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .icon {
+  color: #FFB22C;
+  font-size: 100px;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #FFB22C;
+  font-size: 22px;
+  margin: 10px;
+}
+
+.adv p {
+  color: #FFB22C;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.content ul li {
+  color: #fff;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 800;
+  display: flex;
+  margin-top: 5px;
+}
+
+.content ul li span {
+  margin-left: 12px;
+}
+
+.contact .card {
+  min-width: 340px;
+}
+
+
+/* ================================================= */
+
 @media (max-width: 480px) {
     form {
         width: 90%;
