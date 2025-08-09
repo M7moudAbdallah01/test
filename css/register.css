@@ -1,31 +1,104 @@
+/* استدعاء الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Tajawal:wght@400;700&display=swap');
+
+/* الخلفية */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Tajawal", sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../images/back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* مكان النموذج */
 main {
-    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+/* صندوق التسجيل */
+form {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    width: 320px;
+    text-align: right;
+}
+
+/* عنوان النموذج */
+form h2 {
+    margin-bottom: 20px;
+    color: #ffb22c;
     text-align: center;
 }
 
-form {
-    display: inline-block;
-    background: #343434;
-    padding: 20px;
-    border-radius: 10px;
+/* التسميات */
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-form input, form button {
-    display: block;
-    width: 250px;
-    margin: 10px auto;
+/* الحقول */
+form input, 
+form button {
+    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
 }
 
+form input {
+    background: #f0f0f0;
+    color: #000;
+}
+
+/* زر التسجيل */
 form button {
+    margin-top: 15px;
     background-color: #FFB22C;
     color: #1A1C20;
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
     background-color: #F0A500;
+}
+
+/* للموبايل */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    form h2 {
+        font-size: 1.3rem;
+    }
+
+    form input, 
+    form button {
+        font-size: 1rem; /* أكبر من 0.9 */
+        padding: 12px; /* مساحة أكبر للكتابة */
+    }
+}
+
+/* للشاشات الكبيرة */
+@media (min-width: 768px) {
+    form {
+        padding: 35px;
+    }
+
+    form h2 {
+        font-size: 1.7rem;
+    }
 }
