@@ -206,7 +206,7 @@ section {
 }
 /* ================================================== */
 .projects {
-  background: url(images/finaledit.jpg) repeat;
+  background: url(images/finaledit.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 10px;
