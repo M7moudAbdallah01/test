@@ -1,14 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "Tajawal", sans-serif;
+section {
+  padding: 150px;
+  background-color: #111;
+  margin: 100px 0px;
+  text-align: center;
+}
+ 
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  margin-top: 50px;
+  overflow: hidden;
+  background-color: #111;
 }
 
-body {
-  background-color: #0d0d0f;
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../images/firstyear.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: opacity(0.2); 
+  z-index: 0;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.main .image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #FFB22C;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.main .text {
+  max-width: 600px;
   color: #fff;
+}
+
+.main h2 {
+  color: #FFB22C;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.main h2 span {
+  margin-top: 8px;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  color: #fff;
+  background-color: #FFB22C;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.7s ease;
+  border-radius: 15px;
+  padding: 10px 20px ;
+  text-decoration: none;
+  margin: 30px 0px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.btn:hover {
+  background-color: rgb(35, 35, 35);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* مسافة بين الصورة والنص */
+  }
+
+  .main .text {
+    max-width: 90%;
+  }
+
+  .main .image img {
+    width: 200px;
+    height: 200px;
+  }
+    .main-content {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .main .image img {
+    width: 200px !important;
+    height: 200px !important;
+    margin-bottom: 20px;
+  }
+
+  .main .text {
+    max-width: 100% !important;
+    color: #fff;
+    text-align: center;
+  }
+
+  section.main {
+    padding: 100px 20px 60px 20px !important;
+  }
+
 }
