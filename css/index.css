@@ -360,8 +360,29 @@ section {
     width: 200px;
     height: 200px;
   }
-}
+    .main-content {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 20px;
+  }
 
+  .main .image img {
+    width: 200px !important;
+    height: 200px !important;
+    margin-bottom: 20px;
+  }
+
+  .main .text {
+    max-width: 100% !important;
+    color: #fff;
+    text-align: center;
+  }
+
+  section.main {
+    padding: 100px 20px 60px 20px !important;
+  }
+
+}
 
 
 
