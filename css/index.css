@@ -249,12 +249,13 @@ section {
 
 .details {
   font-size: 14px;
-  color: rgb(4, 192, 4);
+  color: #FFB22C;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .project-title {
@@ -268,16 +269,18 @@ section {
 
 .go-to-project {
   text-decoration: none;
-  color: #4e9f3d;
+  color: #111;
   margin-left: 10px;
   transition: 0.7s ease;
   border-radius: 10px;
-  padding: 7px;
+  padding: 10px 20px;
+  font-weight: 700;
+  background-color: #ffa203;
 }
 
 .go-to-project:hover {
-  background-color: #4e9f3d;
-  color: #f0f0f0;
+  color: #ffa203;
+  background-color: #111;
   transform: scale(1.1);
 }
 /* Go To Top  */
