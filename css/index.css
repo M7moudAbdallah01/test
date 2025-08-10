@@ -223,7 +223,7 @@ section {
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: #1c1c1c;
   border: 1.5px solid #fff;
   min-height: 224px;
   width: 368px;
@@ -249,13 +249,12 @@ section {
 }
 
 .details {
-  font-size: 14px;
   color: #FFB22C;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
 }
 
