@@ -62,15 +62,11 @@ section {
 
 .main h2 {
   color: #FFB22C;
-  font-size: 28px;
+  font-size: 60px;
   font-weight: bold;
 }
 
-.main h2 span {
-  margin-top: 8px;
-  font-size: 55px;
-  font-weight: bold;
-}
+
 
 .main h3 {
   color: #fff;
