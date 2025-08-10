@@ -94,6 +94,80 @@ section {
   background-color: rgb(35, 35, 35);
   transform: scale(1.1);
 }
+/* ================================================== */
+.projects {
+  background: url() no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10px;
+}
+
+.projects .content {
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #2a2a2a;
+  border: 1.5px solid #fff;
+  min-height: 224px;
+  width: 368px;
+  min-width: 220px;
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 10px;
+  transition: 0.7s ease;
+  border-radius: 12%;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-img img {
+  width: 100%;
+  
+}
+
+.project-info {
+  padding: 16px;
+}
+
+.details {
+  color: #FFB22C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.go-to-project {
+  text-decoration: none;
+  color: #111;
+  margin-left: 10px;
+  transition: 0.7s ease;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 700;
+  background-color: #ffa203;
+}
+
+.go-to-project:hover {
+  color: #ffa203;
+  background-color: #111;
+  transform: scale(1.1);
+}
+
 
 @media (max-width: 768px) {
   .main-content {
