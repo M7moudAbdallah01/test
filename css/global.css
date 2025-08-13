@@ -142,6 +142,29 @@ hr {
 .icon .tel:hover{
   color: rgb(40, 135, 243);
 }
+
+/* Go To Top  */
+#Backtotop {
+  background-color: #0d0d0f;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 20px;
+  position: fixed;
+  z-index: 100;
+  border: none;
+  cursor: pointer;
+  bottom: 15px;
+  right: 15px;
+  font-size: 30px;
+  display: none;
+  box-shadow: 0 0 2px #FFB22C;
+}
+
+#Backtotop:hover {
+  border: 1px solid #FFB22C;
+  color: #FFB22C;
+}
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .nav-left {
