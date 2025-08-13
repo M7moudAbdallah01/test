@@ -169,6 +169,26 @@ section {
 }
 
 
+
+/* للشاشات الكبيرة */
+@media (min-width: 768px) {
+    form {
+        padding: 35px;
+    }
+
+    form h2 {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 768px) {
+  .main::before {
+    background-attachment: scroll; /* في الموبايل تتحرك مع المحتوى */
+  }
+  .adv {
+    background-attachment: scroll;
+  }
+}
+
 @media (max-width: 768px) {
   .main-content {
     flex-direction: column;
@@ -208,3 +228,6 @@ section {
   }
 
 }
+
+
+
