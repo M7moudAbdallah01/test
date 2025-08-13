@@ -94,11 +94,14 @@ section {
   background-color: rgb(35, 35, 35);
   transform: scale(1.1);
 }
-/* ================================================== */
+/* ================================================== */ 
 .projects {
   background-size: cover;
   background-position: center;
   padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projects .content {
@@ -167,6 +170,48 @@ section {
   transform: scale(1.1);
 }
 
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../images/firstyear.jpeg');
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  filter: opacity(0.2);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .main::before {
+    background-attachment: scroll;
+  }
+}
+
+
+/* للشاشات الكبيرة */
+@media (min-width: 768px) {
+    form {
+        padding: 35px;
+    }
+
+    form h2 {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 768px) {
+  .main::before {
+    background-attachment: scroll; /* في الموبايل تتحرك مع المحتوى */
+  }
+  .adv {
+    background-attachment: scroll;
+  }
+}
 
 @media (max-width: 768px) {
   .main-content {
