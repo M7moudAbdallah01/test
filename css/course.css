@@ -5,4 +5,75 @@
     font-weight: bold;
     color: #ffa203;
     text-align: center;
+    /* display: none; */
+}
+h2{
+  display: flex;
+  justify-content: center;
+  color: #FFB22C;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 140px;
+  margin-bottom:30px ;
+  padding: 10px;
+  background-color: #0d0d0f;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 25px;
+  border: 2px solid #FFB22C;
+}
+.youtube{
+  text-decoration: none;
+  color: white;
+}
+.youtube:hover {
+  color: #FFB22C;
+  padding-right: 5px;       /* حركة بسيطة */
+}
+
+/* ============ Responsive Lessons ============ */
+@media (max-width: 768px) {
+  .lesson {
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+
+  .lesson-header {
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+
+  .lesson-header .chev {
+    font-size: 16px;
+  }
+
+  .lesson-content {
+    padding: 10px 14px;
+  }
+
+  .lesson-content div {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .lesson-header {
+    font-size: 15px;
+    padding: 10px 12px;
+    gap: 6px;
+  }
+
+  .lesson-header .chev {
+    font-size: 14px;
+  }
+
+  .lesson-content {
+    padding: 8px 12px;
+  }
+
+  .lesson-content div {
+    font-size: 13px;
+    padding: 6px 0;
+  }
 }

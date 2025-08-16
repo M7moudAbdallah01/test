@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الكورس</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/course.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+                <!-- navbar.html -->
+    <header>
+        <nav>
+            <div class="nav-right">
+                <img src="images/finallogo.png" alt="Logo" class="logo">
+            </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-left" id="navLinks">
+                <a href="index.html">الرئيسية</a>
+                <a href="login.html">تسجيل الدخول</a>
+                <a href="register.html">إنشاء حساب</a>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        .temp{
+            display: none;
+        }
+        .lesson {
+        background: #111;
+        border: 1px solid #FFB22C;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(255,178,44,.15);
+        }
+
+        .lesson-header {
+        display: flex;
+        direction: rtl;                 /* يخلي البداية يمين */
+        align-items: center;
+        padding: 16px 20px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFB22C;
+        background-color: #1a1a1a;
+        user-select: none;
+        }
+
+        .lesson-title {
+        /* النص يفضل ملاصق لليمين */
+        }
+
+        .lesson-header .chev {
+        margin-inline-start: auto;      /* تودّي السهم لأقصى الشمال */
+        color: #F0A500;
+        transition: transform .3s, color .3s;
+        display: inline-flex;
+        font-size: 18px;
+        }
+
+        .lesson-header .chev.open {
+        transform: rotate(90deg);
+        color: #fff;
+        }
+
+        .lesson-content {
+        display: none;
+        padding: 12px 20px;
+        background: #0d0d0f;
+        border-top: 1px solid #FFB22C;
+        }
+
+        .lesson-content div {
+        display: flex;
+        flex-direction: row;      /* ترتيب أفقي */
+        direction: rtl;           /* يبدأ من اليمين */
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;                 /* مسافة بين الأيقونة والنص */
+        
+        font-size: 15px;
+        padding: 10px 0;
+        cursor: pointer;
+        color: #ccc;
+        font-weight: 500;
+        transition: color 0.3s, padding-right 0.3s;
+        }
+
+        .lesson-content div:hover {
+        color: #FFB22C;
+        padding-right: 5px;       /* حركة بسيطة */
+        }
+
+
+
+    </style>
+
+    <!-- ================================================ -->
+    
+
+        <h2 class="lessons">الامتحانات</h2>
+
+
+    <section class="temp">
+        <p>... سيتم اضافة الفيديوهات قريبا<p>
+    </section>
+
+        <div class="lesson">
+            <div class="lesson-header" onclick="toggleLesson(this)">
+                <span class="lesson-title" >📘 امتحانات شاملة </span>
+                <i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i>
+            </div>
+            <div class="lesson-content">
+                <div><a href="https://youtu.be/aMWgaUxMHsI?si=Xmwd9BX6P8DQqKP8" target="_blank" class="youtube">🎥 فيديو 1 : استرشادي ثانوية عامة 2025 </a></div>
+
+            </div>
+            </div>
+
+            <div class="lesson">
+            <div class="lesson-header" onclick="toggleLesson(this)">
+                <span class="lesson-title">📘 امتحانات لكل باب</span>
+                <i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i>
+            </div>
+            <div class="lesson-content">
+                <div>🎥 فيديو 1 : استرشادي الباب الثالث</div>
+            </div>
+        </div>
+
+
+
+
+
+    <button id="Backtotop" title="Back To Top">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <!-- ================================================ -->
+
+    
+
+            <footer>
+                 <div class="icon">
+                    <a href="https://www.facebook.com/share/16DTYSSrtm/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                    <a href="https://youtube.com/channel/UC5xzS3gkYDmHnl4h2xP9qrw?si=GO2guEkunrqCE2IU" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+                <hr>
+                <div class="end">
+                    <p class="footer-sentence" lang="ar">💕 تم صنع هذه المنصة بهدف تهيئة الطالب  لكامل جوانب الثانوية العامة و ما بعدها  💕</p>
+                </div>
+
+                <div class="copyrights">
+                    <p>< Developed by > <a href="https://www.facebook.com/share/1Fk2Tppkp2" target="_blank" class="mahmoud"> Mahmoud A. Sharaf</a> <br> &copy;2025 All rights reserved.</p>
+                </div>
+            </footer>
+
+<script src="../js/app.js"></script>
+<script src="js/lessons.js"></script>
+</body>
+</html>
