@@ -73,7 +73,27 @@ form button {
 form button:hover {
     background-color: #F0A500;
 }
-
+.Sign-in {
+  margin: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+.Sign-in a{
+    color: #F0A500;
+    text-decoration: none;
+}
+.Sign-in a:hover{
+    color: white;
+    text-decoration: underline;
+}
+#error {
+  color: red;
+  display: none;
+  justify-content: center;
+  font-weight: bold;
+  margin-left: 30%;
+}
 /* للموبايل */
 @media (max-width: 480px) {
     form {
